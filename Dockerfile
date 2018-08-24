@@ -5,6 +5,7 @@ RUN apk add --update \
     python \
     python-dev \
     py-pip \
+    make \
     && pip install jinja2 \
     && rm -rf /var/cache/apk/*
 RUN touch /etc/docker_jinja2_env
