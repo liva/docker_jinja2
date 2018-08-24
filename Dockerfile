@@ -2,10 +2,9 @@ FROM alpine
 
 RUN apk add --update \
     bash \
-    python \
-    python-dev \
-    py-pip \
+    python3 \
+    python3-dev \
     make \
-    && pip install jinja2 \
+    && pip3 install jinja2 \
     && rm -rf /var/cache/apk/*
 RUN touch /etc/docker_jinja2_env
